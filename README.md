@@ -1,6 +1,9 @@
 # AppiumProjects
 基于Appium框架开发的自动化程序
 
+## adb_devices_control
+利用adb命令对设备进行控制
+
 ## qq
 QQ自动加好友
 
