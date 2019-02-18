@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>902</width>
+    <height>823</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>微信养号</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>451</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#groupBox{border:1px solid}</string>
+    </property>
+    <property name="title">
+     <string>策略维护</string>
+    </property>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>431</width>
+       <height>371</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="currentIndex">
+      <number>3</number>
+     </property>
+     <widget class="QWidget" name="tab_0">
+      <attribute name="title">
+       <string>关注公众号</string>
+      </attribute>
+      <widget class="QTextEdit" name="te_official_accounts">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>88</x>
+         <y>96</y>
+         <width>320</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_add_official_accounts">
+       <property name="geometry">
+        <rect>
+         <x>324</x>
+         <y>60</y>
+         <width>40</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_add_tactic0">
+       <property name="geometry">
+        <rect>
+         <x>337</x>
+         <y>320</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>添加策略</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_clear_official_accounts">
+       <property name="geometry">
+        <rect>
+         <x>368</x>
+         <y>60</y>
+         <width>40</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>清空</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_concern_interval_1">
+       <property name="geometry">
+        <rect>
+         <x>87</x>
+         <y>231</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_official_account">
+       <property name="geometry">
+        <rect>
+         <x>88</x>
+         <y>61</y>
+         <width>230</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>23</x>
+         <y>234</y>
+         <width>48</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>间隔(秒)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>23</x>
+         <y>63</y>
+         <width>36</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>公众号</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>235</y>
+         <width>21</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_concern_interval_2">
+       <property name="geometry">
+        <rect>
+         <x>158</x>
+         <y>231</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>21</x>
+         <y>266</y>
+         <width>48</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>策略间隔</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_tactic0_interval">
+       <property name="geometry">
+        <rect>
+         <x>87</x>
+         <y>264</y>
+         <width>30</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>269</y>
+         <width>291</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_15{color:red}</string>
+       </property>
+       <property name="text">
+        <string>*单位(分钟),该策略执行完成后的等待时间</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_37">
+       <property name="geometry">
+        <rect>
+         <x>24</x>
+         <y>28</y>
+         <width>54</width>
+         <height>12</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>关注数</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_concern_num">
+       <property name="geometry">
+        <rect>
+         <x>88</x>
+         <y>24</y>
+         <width>30</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_38">
+       <property name="geometry">
+        <rect>
+         <x>121</x>
+         <y>28</y>
+         <width>201</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_38{color:red}</string>
+       </property>
+       <property name="text">
+        <string>*从维护的公众号列表中随机取</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_1">
+      <attribute name="title">
+       <string>文章阅读转发</string>
+      </attribute>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>31</x>
+         <y>41</y>
+         <width>60</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>阅读文章数</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_article_read_num">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>41</y>
+         <width>100</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="cb_if_share">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>43</y>
+         <width>45</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>转发</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>98</y>
+         <width>48</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>间隔(秒)</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_add_tactic1">
+       <property name="geometry">
+        <rect>
+         <x>337</x>
+         <y>320</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>添加策略</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_read_share_interval_1">
+       <property name="geometry">
+        <rect>
+         <x>109</x>
+         <y>94</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>172</x>
+         <y>97</y>
+         <width>21</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_read_share_interval_2">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>94</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>39</x>
+         <y>147</y>
+         <width>48</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>策略间隔</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_tactic1_interval">
+       <property name="geometry">
+        <rect>
+         <x>109</x>
+         <y>145</y>
+         <width>30</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>朋友圈点赞</string>
+      </attribute>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>55</x>
+         <y>113</y>
+         <width>48</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>间隔(秒)</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_add_tactic2">
+       <property name="geometry">
+        <rect>
+         <x>337</x>
+         <y>320</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>添加策略</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>55</x>
+         <y>42</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>滑动次数</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_thumbup_interval_1">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>110</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_moments_swipe_num">
+       <property name="geometry">
+        <rect>
+         <x>131</x>
+         <y>40</y>
+         <width>30</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>192</x>
+         <y>112</y>
+         <width>21</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_thumbup_interval_2">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>110</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>51</x>
+         <y>152</y>
+         <width>48</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>策略间隔</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_tactic2_interval">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>150</y>
+         <width>30</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_39">
+       <property name="geometry">
+        <rect>
+         <x>44</x>
+         <y>76</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>点赞概率(%)</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_moments_thumbup_ratio">
+       <property name="geometry">
+        <rect>
+         <x>131</x>
+         <y>73</y>
+         <width>30</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_40">
+       <property name="geometry">
+        <rect>
+         <x>168</x>
+         <y>43</y>
+         <width>201</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_40{color:red}</string>
+       </property>
+       <property name="text">
+        <string>*浏览朋友圈时,向下滑动的次数</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_41">
+       <property name="geometry">
+        <rect>
+         <x>167</x>
+         <y>77</y>
+         <width>251</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#label_41{color:red}</string>
+       </property>
+       <property name="text">
+        <string>*浏览每条朋友圈动态时,根据概率决定是否点赞</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>聊天消息</string>
+      </attribute>
+      <widget class="QTextEdit" name="te_chat_objects">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>49</y>
+         <width>331</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>23</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>聊天对象</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_chat_object">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>21</y>
+         <width>170</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_add_chat_objects">
+       <property name="geometry">
+        <rect>
+         <x>329</x>
+         <y>20</y>
+         <width>40</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_add_tactic3">
+       <property name="geometry">
+        <rect>
+         <x>337</x>
+         <y>320</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>添加策略</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_add_msg_contents">
+       <property name="geometry">
+        <rect>
+         <x>328</x>
+         <y>130</y>
+         <width>40</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_msg_content">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>131</y>
+         <width>241</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>133</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>消息内容</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="te_msg_contents">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>159</y>
+         <width>331</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>265</y>
+         <width>48</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>间隔(秒)</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_send_msg_interval_1">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>261</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_clear_chat_objects">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>20</y>
+         <width>40</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>清空</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_clear_msg_contents">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>130</y>
+         <width>40</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>清空</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>142</x>
+         <y>264</y>
+         <width>21</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_send_msg_interval_2">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>261</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_tactic3_interval">
+       <property name="geometry">
+        <rect>
+         <x>79</x>
+         <y>290</y>
+         <width>30</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>292</y>
+         <width>48</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>策略间隔</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cb_chat_object_type">
+       <property name="geometry">
+        <rect>
+         <x>252</x>
+         <y>20</y>
+         <width>70</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>类型</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>好友</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>群聊</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>420</y>
+      <width>870</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>20</y>
+      <width>401</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#groupBox_2{border:1px solid}</string>
+    </property>
+    <property name="title">
+     <string>当前策略</string>
+    </property>
+    <widget class="QTextEdit" name="te_current_tactics">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>380</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_import_tactics">
+     <property name="geometry">
+      <rect>
+       <x>264</x>
+       <y>11</y>
+       <width>40</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>导入</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_export_tactics">
+     <property name="geometry">
+      <rect>
+       <x>307</x>
+       <y>11</y>
+       <width>40</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>导出</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_clear_tactics">
+     <property name="geometry">
+      <rect>
+       <x>349</x>
+       <y>11</y>
+       <width>40</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>清空</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_start">
+     <property name="geometry">
+      <rect>
+       <x>349</x>
+       <y>370</y>
+       <width>41</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开始</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="cb_screen_off">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>376</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>熄屏</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="cb_switch_accounts">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>376</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>切换账号</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>434</y>
+      <width>870</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#groupBox_3{border:1px solid}</string>
+    </property>
+    <property name="title">
+     <string>设备信息</string>
+    </property>
+    <widget class="QTableView" name="tableView">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>850</width>
+       <height>327</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">Widget{text-align:center}</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>24</y>
+      <width>20</width>
+      <height>390</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
