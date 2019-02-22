@@ -67,7 +67,6 @@ class AppiumAutoTool():
 
         logging.warning(f'Screen Unlock Failed:{self.serial}')
 
-
     # 获取屏幕锁定状态 0:暗屏未解锁 1:亮屏未解锁 2:亮屏已解锁
     def get_screen_lock_state(self):
         result1 = ''.join(execute_cmd(f'adb -s {self.serial} shell "dumpsys window policy|grep isStatusBarKeyguard"',type=1))
@@ -87,11 +86,14 @@ class AppiumAutoTool():
 
         return state
 
-
-
     # 按下返回键
     def press_back(self,sleep=2):
         self.driver.press_keycode(4)
+        time.sleep(sleep)
+
+    # 按下返回键(使用adb命令)
+    def press_back_adb(self,sleep=2):
+        execute_cmd(f'adb -s {self.serial} shell input keyevent 4')
         time.sleep(sleep)
 
     # 判断元素是否存在
@@ -106,10 +108,10 @@ class AppiumAutoTool():
         elif type == 'xpath':
             try:
                 el = wait_for_el.until(EC.presence_of_element_located((By.XPATH, selector)))
-                print('find:',selector)
+                # print('find:',selector)
                 return el
             except:
-                print('not find:', selector)
+                # print('not find:', selector)
                 return False
 
     # 判断元素是否可点击
